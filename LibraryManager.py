@@ -4,8 +4,8 @@ authors_set = set()
 books_dict = {}
 
 books_list.append("Python Programing")
-authors_set.add("Jhon Smith")
-books_dict["Python Programing"] = "Jhon Smith"
+authors_set.add("John Smith")
+books_dict["Python Programing"] = "John Smith"
 
 books_list.append("Data Structures and Algorithms")
 authors_set.add("Jane Doe")
@@ -17,7 +17,7 @@ books_dict["Machine Learning Basics"] = "Alice Johnson"
 
 #To search books
 
-search_title = input("Enter the title of the book to seatch:")
+search_title = input("Enter the title of the book to search:")
 if search_title in books_list:
     print(f"Book found! Author: {books_dict[search_title]}")
 else:
@@ -31,7 +31,7 @@ for book in books_list:
 
 # to remove a book
 
-remove_title = input("Enter the title of yhe book to remove or else enter to skip:")
+remove_title = input("Enter the title of the book to remove or else enter to skip:")
 if remove_title in books_list:
     remove_author = books_dict[remove_title]
     books_list.remove(remove_title)
