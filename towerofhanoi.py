@@ -17,4 +17,5 @@ class Solution:
         moves += self.toh(N - 1, aux, to, fromm) # Recursive call
         return moves # Return the total moves made for this step and all recursive steps
 s = Solution()
-print(s.toh(3, 1, 3, 2))
+print(s.toh(2, 1, 3, 2))
+
